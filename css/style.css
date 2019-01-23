@@ -1,0 +1,78 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > *
+{
+    flex: 1 100%;
+    padding: 0.4rem;
+}
+
+.header
+{
+    background-color: rgb(42, 243, 109);
+}
+
+.main
+{
+    background-color: rgb(194, 248, 95);
+}
+
+.aside
+{
+    background-color: rgb(247, 93, 3);
+}
+
+.footer
+{
+    background-color: rgb(250, 183, 0);
+}
+
+@media all and (min-width: 600px) 
+{
+    .aside { flex: 2 0 0; }
+}
+
+@media all and (min-width: 800px)
+{
+    .main
+    {
+        flex: 3 0px;
+    }
+
+    .aside-1
+    {
+        order: 1;
+    }
+
+    .main
+    {
+        order: 2;
+    }
+
+    .aside-2
+    {
+        order: 3;
+    }
+
+    .footer
+    {
+        order: 4;
+    }
+}
